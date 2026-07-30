@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinosauro 3D Interattivo</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.166.1/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@0.166.1/examples/jsm/"
+      }
+    }
+    </script>
+</head>
+
+<body>
+
+    <div id="viewer"></div>
+
+    <div id="infoPanel" class="hidden">
+
+        <button id="closeBtn">✕</button>
+
+        <h2 id="title">Titolo</h2>
+
+        <p id="description"></p>
+
+    </div>
+
+    <button id="resetCamera">
+        Vista iniziale
+    </button>
+
+    <div id="loading">
+        Caricamento modello...
+    </div>
+
+    <script type="module" src="main.js"></script>
+
+</body>
+
+</html>

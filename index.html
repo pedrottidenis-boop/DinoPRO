@@ -2,45 +2,51 @@
 <html lang="it">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dinosauro 3D Interattivo</title>
 
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
 
-    <script type="importmap">
-    {
-      "imports": {
-        "three": "https://unpkg.com/three@0.166.1/build/three.module.js",
-        "three/addons/": "https://unpkg.com/three@0.166.1/examples/jsm/"
-      }
-    }
-    </script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dinosauro 3D</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script type="importmap">
+{
+"imports":{
+"three":"https://unpkg.com/three@0.166.1/build/three.module.js",
+"three/addons/":"https://unpkg.com/three@0.166.1/examples/jsm/"
+}
+}
+</script>
+
 </head>
 
 <body>
 
-    <div id="viewer"></div>
+<div id="viewer"></div>
 
-    <div id="infoPanel" class="hidden">
+<div id="loading">
+Caricamento modello...
+</div>
 
-        <button id="closeBtn">✕</button>
+<div id="infoPanel" class="hidden">
 
-        <h2 id="title">Titolo</h2>
+<button id="closeBtn">✕</button>
 
-        <p id="description"></p>
+<h2 id="title"></h2>
 
-    </div>
+<p id="description"></p>
 
-    <button id="resetCamera">
-        Vista iniziale
-    </button>
+</div>
 
-    <div id="loading">
-        Caricamento modello...
-    </div>
+<button id="resetCamera">
 
-    <script type="module" src="main.js"></script>
+Vista iniziale
+
+</button>
+
+<script type="module" src="main.js"></script>
 
 </body>
 
